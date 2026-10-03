@@ -1,1 +1,18 @@
+# Experimental Raw Data (Data for Lab)
 
+โฟลเดอร์นี้รวบรวมไฟล์ข้อมูลดิบจากการทดลอง (Raw Experimental Data) ทั้งหมดในรูปแบบไฟล์ CSV ที่ได้บันทึกจากการอ่านค่าผ่านบอร์ด STM32 และประมวลผลร่วมกับ MATLAB/Simulink
+
+## 📁 รายการไฟล์ข้อมูลดิบ (Data Files)
+
+| `Data_Lab1.1.csv` | **Lab 1.1:** Potentiometers & Schmitt Trigger | ข้อมูลค่าการสุ่มตัวอย่าง ADC, ระยะทาง/มุมหมุน (cm/degree) และแรงดันเอาต์พุต ($V_{out}$) ของ Linear/Rotary Potentiometers ทุก Trial |
+
+| `Data_Lab1.2.csv` | **Lab 1.2:** Magnetic Sensor (Hall Effect) | ข้อมูลระยะห่างจากแท่งแม่เหล็ก (cm), ค่าแรงดัน $V_{out}$ และความหนาแน่นฟลักซ์แม่เหล็ก ($B$) ทั้งสภาวะมี Shield และไม่มี Shield |
+
+| `Data_Lab1.4.csv` | **Lab 1.4:** Single Point Load Cell with INA125 | ข้อมูลค่าน้ำหนักจริง (kg), ค่าแรงดัน $V_{out}$ ที่ขยายผ่าน INA125 และค่าน้ำหนักที่คำนวณย้อนกลับด้วยสมการ Calibration |
+
+## 📊 โครงสร้างข้อมูลภายในไฟล์ CSV
+
+ไฟล์ข้อมูลแต่ละไฟล์จะถูกนำไปใช้โดยสคริปต์ประมวลผล MATLAB ในแต่ละโฟลเดอร์ปฏิบัติการหลัก ดังนี้:
+* `Data_Lab1.1.csv` ➡️ ถูกเรียกใช้โดยสคริปต์ในโฟลเดอร์ `Lab1_1/`
+* `Data_Lab1.2.csv` ➡️ ถูกเรียกใช้โดยสคริปต์ในโฟลเดอร์ `Lab1_2/`
+* `Data_Lab1.4.csv` ➡️ ถูกเรียกใช้โดยสคริปต์ในโฟลเดอร์ `Lab1_4/`
