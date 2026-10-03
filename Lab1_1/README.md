@@ -1,6 +1,7 @@
 ## Lab 1.1: Potentiometer
 
 ## 📁 โครงสร้างไฟล์ในโฟลเดอร์ (File Directory)
+| ชื่อไฟล์ | ประเภท | คำอธิบาย |
 | :--- | :--- | :--- |
 | `Simulink_Lab1.1.slx` | Simulink Model | แบบจำลองการรับสัญญาณอนาล็อกจาก STM32/ADC และวงจร Schmitt Trigger |
 | `Code_Potentiometer_Linear.m` | MATLAB Script | โค้ดอ่านและประมวลผลข้อมูล Linear Potentiometer (Type A & Type B) |
